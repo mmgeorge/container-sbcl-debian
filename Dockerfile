@@ -1,7 +1,6 @@
 FROM debian:latest
 
-ARG SBCL_VERSION
-
+ENV SBCL_VERSION $SBCL_VERSION
 ENV HOME /root
 
 COPY ./install.lisp $HOME
